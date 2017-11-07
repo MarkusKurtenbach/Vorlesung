@@ -62,14 +62,26 @@ plot(ger)
 prec<-getData("worldclim",var="prec",res=.5,lon=10,lat=51)
 plot(prec)
 
-prec_ger1<-crop(prec,germany)
+prec_ger1<-crop(prec,ger)
 spplot(prec_ger1)
 
-prec_ger2<-mask(prec_ger1, germany)
+prec_ger2<-mask(prec_ger1, ger)
 spplot(prec_ger2)
 
 prec_avg<-cellStats(prec_ger2,stat="mean")
 plot(prec_avg)
+
+plot(prec_avg[7])  #plot the data "prec" but just July
+plot(prec_avg[4:9]) #plot only April to Sept
+
+prec_avg[2]-prec_avg[1] #substract the Jan from Feb Precipitation
+sum(prec_avg) #Sum of Precipitation
+cumsum(prec_avg)
+max(prec_avg)
+range(prec_avg)
+which.min(prec_avg) #which is the minimum value
+which.min(abs(prec_avg-50)) #which is closest to value x
+diff(prec_avg)#difference between elements
 
 #################Dokument erstellen###########################
 
