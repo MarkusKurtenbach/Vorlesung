@@ -75,7 +75,7 @@ plot(prec_avg[7])  #plot the data "prec" but just July
 plot(prec_avg[4:9]) #plot only April to Sept
 
 prec_avg[2]-prec_avg[1] #substract the Jan from Feb Precipitation
-sum(prec_avg) #Sum of Precipitation
+sum(prec_avg) #Sum of Precipitations
 cumsum(prec_avg)
 max(prec_avg)
 range(prec_avg)
