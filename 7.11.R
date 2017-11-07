@@ -43,7 +43,7 @@ library(car) #Alternative
 x2 <- recode(x,"0:30=1;30:70=2; else=3")
 x2
 
-summary(x) #general summary stats
+summary(x) #general summary stats 
 sum(x) #general sum
 cumsum(x) #cummulative sum
 
@@ -64,7 +64,7 @@ df
 summary(df)
 str(df)
 mode(df)
-head(df)
+head(df) 
 df[,c("plot","measure1","measure2")] #plot the whole data fram but just for plot,measure1 and 2
 
 df[66:115,c("plot","measure1","measure2")] #plot just for line 566 to 570 for plot and measure 1 and 2
