@@ -49,7 +49,7 @@ cumsum(x) #cummulative sum
 
 rev(x) #revert order
 sort(x,decreasing=TRUE) #revert order
-sample(x,10) #sample 10 values out of x
+sample(x,10) #sample 10 values out x
 
 ######################Data Frame
 test <- data.frame(A=c(1,2,3),B=c("aB1","aB2","aB3")) #dataframe mit 2 columns
