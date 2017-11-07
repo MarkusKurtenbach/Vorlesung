@@ -68,7 +68,3 @@ head(df)
 df[,c("plot","measure1","measure2")] #plot the whole data fram but just for plot,measure1 and 2
 
 df[66:115,c("plot","measure1","measure2")] #plot just for line 566 to 570 for plot and measure 1 and 2
-
-#################Index the germany precipitation data###############
-#How to just extract the value of July
-prec_avg[7]
